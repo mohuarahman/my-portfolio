@@ -1,7 +1,5 @@
 'use client'
 import React, { useState } from "react";
-import Logo from "@/img/logo.png";
-import Image from "next/image";
 import { navlink } from "@/constant/data";
 import Link from "next/link";
 import { AiOutlineMenu,AiOutlineClose } from "react-icons/ai";
@@ -10,9 +8,7 @@ import { motion } from "framer-motion";
 
 function Header() {
   const [show , setShow]=useState(false);
-  const routname = usePathname()
-  console.log(routname);
-  
+  const routname = usePathname();
   return (
     <main className="sticky top-0 z-10">
       <nav className="w-full h-16 bg-backgroundColor relative">
@@ -20,7 +16,8 @@ function Header() {
           {/* navbar logo */}
           <div>
             <Link href={'/'}>
-            <Image src={Logo} alt="logo image" className="w-24"></Image>
+            {/* <Image src={Logo} alt="logo image" className="w-24"></Image> */}
+            <h2 className="uppercase font-semibold text-3xl tracking-wide">PORTFOLIO</h2>
             </Link>
           </div>
           {/* navbar item */}

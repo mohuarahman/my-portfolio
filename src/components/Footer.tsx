@@ -1,7 +1,5 @@
 'use client'
 import React from "react";
-import Logo from "@/img/logowhite.png";
-import Image from "next/image";
 import Link from "next/link";
 import {BsFacebook,BsYoutube,BsLinkedin,BsTwitter,BsInstagram} from 'react-icons/bs'
 import { navlink,footersupert } from "@/constant/data";
@@ -18,7 +16,7 @@ function Footer() {
         <div className="w-full py-10 px-6 max-w-screen-xl mx-auto grid gap-10 grid-cols-1 md:grid-cols-3  lg:grid-cols-4 ">
           {/* footer 1st section */}
           <div className="my-auto">
-            <Image src={Logo} alt="logo image" className="w-36 mb-3"></Image>
+            <h2 className="uppercase text-white mb-4 font-semibold text-3xl tracking-wide">PORTFOLIO</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
               architecto nobis dolorem veritatis, velit repellat?
@@ -60,8 +58,8 @@ function Footer() {
           <div className="my-auto">
             <p className="mb-5">Rech me with</p>
             <div className="flex gap-3">
-            <a href=""><p className="text-2xl"><BsFacebook/></p></a>
-            <a href=""><p className="text-2xl"><BsYoutube/></p></a>
+            <a href="https://www.facebook.com/dustumisti.mohua/"><p className="text-2xl"><BsFacebook/></p></a>
+            <a href="https://www.youtube.com/"><p className="text-2xl"><BsYoutube/></p></a>
             <a href=""><p className="text-2xl"><BsLinkedin/></p></a>
             <a href=""><p className="text-2xl"><BsTwitter/></p></a>
             <a href=""><p className="text-2xl"><BsInstagram/></p></a>

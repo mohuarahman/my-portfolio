@@ -52,7 +52,7 @@ function Banner() {
             Repellat, esse!
           </p>
           <Link
-            href={"/resume"}
+            href={"/contact"}
             className="px-10 py-3 bg-gray-800 text-white rounded-lg"
           >
             Hire Me
